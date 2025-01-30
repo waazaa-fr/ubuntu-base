@@ -4,7 +4,7 @@ LABEL org.opencontainers.image.authors="waazaa <waazaa@waazaa.fr>"
 LABEL version="ubuntu-base"
 LABEL desc="Ubuntu Linux base image"
 
-# Variables d'environnement
+# Variables d'environnement déclarées
 ENV TZ=Europe/Paris
 ENV PUID=99
 ENV PGID=100
