@@ -1,7 +1,7 @@
 FROM ubuntu:24.04
 
 LABEL org.opencontainers.image.authors="waazaa <waazaa@waazaa.fr>"
-LABEL version="ubuntu-base:24.04"
+LABEL version="ubuntu-base"
 LABEL desc="Ubuntu Linux base image"
 
 ENV TZ=Europe/Paris
