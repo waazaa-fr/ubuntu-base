@@ -1,4 +1,4 @@
-FROM ubuntu:24.04
+FROM ubuntu:@@VERSION@@
 
 LABEL org.opencontainers.image.authors="waazaa <waazaa@waazaa.fr>"
 LABEL version="ubuntu-base"
