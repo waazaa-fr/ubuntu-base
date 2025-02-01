@@ -1,4 +1,4 @@
-FROM ubuntu:24.04
+FROM ubuntu:@@VERSION@@
 
 LABEL org.opencontainers.image.authors="waazaa <waazaa@waazaa.fr>"
 LABEL version="ubuntu-base"
@@ -10,7 +10,7 @@ ARG DEBIAN_FRONTEND=noninteractive
 #######################################################################################################################################################################
 ##### PAQUETS UTILES
 #######################################################################################################################################################################
-RUN apt-get update && apt-get install -y --no-install-recommends curl wget gpg tree lsb-release sudo locales ca-certificates cron nano python3-pip librsync-dev
+RUN apt-get update && apt-get install -y --no-install-recommends curl wget gpg tree lsb-release sudo locales ca-certificates cron nano python3-pip librsync-dev supervisor
 RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
 RUN mkdir -m 0777 -p /root/.config/pip && echo "[global]" > /root/.config/pip/pip.conf && echo "break-system-packages = true" >> /root/.config/pip/pip.conf
 
